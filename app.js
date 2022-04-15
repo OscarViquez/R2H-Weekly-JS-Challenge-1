@@ -30,8 +30,8 @@ if (bankAccountMenu) {
 
 } else {
     var bankAccountWithdrawal = prompt("How much would you want to Withdrawal?");
-    alert(`Your new balance is: ${parseInt(bankAccountWithdrawal) + bankAccount}`)
-    bankAccount = parseInt(bankAccountWithdrawal) + bankAccount;
+    alert(`Your new balance is: ${parseInt(bankAccountWithdrawal) - bankAccount}`)
+    bankAccount = parseInt(bankAccountWithdrawal) - bankAccount;
 
     // console.log(bankAccount)
     if (bankAccount > 0) {
